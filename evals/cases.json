@@ -1,0 +1,204 @@
+{
+  "version": "2026-07-03-v2",
+  "purpose": "Public regression cases for the zh-viral-knowledge-writing skill. These prompts test title generation, WeChat long-form structure, source honesty, and usefulness for AI, psychology, and coaching topics.",
+  "run_contract": {
+    "platform": "WeChat Official Account long-form",
+    "expected_output": "reader diagnosis, title candidates, recommended title and subtitle, title contract, full draft or outline as requested, quality self-check",
+    "length_target": "2000-3500 Chinese characters when a full draft is requested",
+    "no_raw_corpus_required": true
+  },
+  "cases": [
+    {
+      "id": "ai-topic-01",
+      "domain": "ai",
+      "input_type": "topic_only",
+      "user_prompt": "帮我写一篇公众号长文。我想表达：在 AI 时代，大家都有很多焦虑，但又说不清具体是什么焦虑。请把这个问题讲清楚，让读者觉得和自己有关。",
+      "evaluation_focus": ["title relevance", "opening scene", "reader anxiety decomposition", "no fake current product facts"],
+      "risk_notes": "Do not claim current AI market facts unless sourced."
+    },
+    {
+      "id": "ai-topic-02",
+      "domain": "ai",
+      "input_type": "topic_only",
+      "user_prompt": "选题：未来真正贵的不是会不会用 AI，而是会不会判断 AI 产出的东西。请生成标题和公众号长文。",
+      "evaluation_focus": ["counterintuitive claim", "judgment vs tool usage", "practical payoff"],
+      "risk_notes": "Avoid generic 'AI时代红利' language."
+    },
+    {
+      "id": "ai-rough-01",
+      "domain": "ai",
+      "input_type": "rough_idea",
+      "user_prompt": "我有一个粗糙观点：很多人以为 prompt 写得越复杂越专业，但我觉得真正的问题不是 prompt，而是任务没拆清楚、验收标准没定清楚、自己也不知道什么叫好。帮我写成公众号长文。",
+      "evaluation_focus": ["concrete examples", "anti-prompt-superstition stance", "method delivery"],
+      "risk_notes": "Use illustrative scenarios clearly; do not invent expert credentials."
+    },
+    {
+      "id": "ai-rough-02",
+      "domain": "ai",
+      "input_type": "rough_idea",
+      "user_prompt": "观点：AI 不是让你少思考，而是逼你把思考拆得更清楚。想写给知识工作者，语气可以有判断，但不要吓唬人。",
+      "evaluation_focus": ["reader identity", "balanced pressure", "clear structure"],
+      "risk_notes": "No fearmongering."
+    },
+    {
+      "id": "ai-draft-01",
+      "domain": "ai",
+      "input_type": "plain_draft",
+      "user_prompt": "请把这段平淡初稿重写成公众号长文：现在 AI 工具很多，大家每天都在尝试。可是很多人并没有变得更高效，反而变得更忙。因为他们把时间花在换工具、研究教程、复制别人的提示词上，却没有想清楚自己的工作流。真正重要的是知道自己要解决什么问题，然后选择合适的工具。",
+      "evaluation_focus": ["free rebuild", "title contract", "stronger opening", "specificity"],
+      "risk_notes": "Preserve the core thesis without copying the paragraph order."
+    },
+    {
+      "id": "ai-draft-02",
+      "domain": "ai",
+      "input_type": "plain_draft",
+      "user_prompt": "帮我爆款改写：很多人用 AI 写周报、邮件和文章，短期看省时间，长期看可能越来越不会表达。因为表达不是把句子弄顺，而是把自己的判断说出来。如果把判断也交给 AI，人会慢慢失去声音。",
+      "evaluation_focus": ["emotional cost", "expression vs judgment", "actionable alternative"],
+      "risk_notes": "Avoid unsupported cognitive decline claims."
+    },
+    {
+      "id": "ai-source-01",
+      "domain": "ai",
+      "input_type": "source_material",
+      "user_prompt": "基于这些素材写公众号长文，不要编造额外案例：1. 同样让 AI 写代码，有的人只说'帮我做个页面'，反复返工；2. 有的人先说明用户是谁、页面目标是什么、成功标准是什么，再让 AI 分模块执行；3. 两类人的差距不是工具，而是调度能力；4. 我想把 AI 比作一支机器团队，但不要写得太技术。",
+      "evaluation_focus": ["source preservation", "plain example", "delegation metaphor", "no extra fabricated case"],
+      "risk_notes": "Only use the supplied scenario and clearly marked typical scenes."
+    },
+    {
+      "id": "ai-source-02",
+      "domain": "ai",
+      "input_type": "source_material",
+      "user_prompt": "素材：我观察团队用 AI 的三个常见问题：一是直接把模糊任务丢给 AI；二是看起来生成很多，其实没人验收；三是大家追求工具数量，却没有统一工作流。请写成一篇给团队管理者看的公众号长文。",
+      "evaluation_focus": ["manager reader", "workplace mechanism", "practical workflow"],
+      "risk_notes": "Do not imply this is a statistical survey."
+    },
+    {
+      "id": "psych-topic-01",
+      "domain": "psychology",
+      "input_type": "topic_only",
+      "user_prompt": "写一篇公众号长文：为什么很多人的焦虑不是因为事情太多，而是因为每件事都没有一个清楚的边界。",
+      "evaluation_focus": ["lived moments", "bounded psychology language", "practical boundary method"],
+      "risk_notes": "Do not diagnose anxiety disorders."
+    },
+    {
+      "id": "psych-topic-02",
+      "domain": "psychology",
+      "input_type": "topic_only",
+      "user_prompt": "选题：你不是不自律，你只是一直在用羞耻感逼自己。帮我写成公众号长文。",
+      "evaluation_focus": ["shame-release angle", "non-diagnostic framing", "actionable replacement"],
+      "risk_notes": "Avoid promising therapeutic outcomes."
+    },
+    {
+      "id": "psych-rough-01",
+      "domain": "psychology",
+      "input_type": "rough_idea",
+      "user_prompt": "观点：很多人害怕建立边界，是因为他们把边界误解成冷漠。其实边界不是拒绝别人，而是停止让关系靠消耗维持。写给总是不好意思拒绝的人。",
+      "evaluation_focus": ["reader recognition", "relationship cost", "permission ending"],
+      "risk_notes": "Avoid blaming people who struggle with boundaries."
+    },
+    {
+      "id": "psych-rough-02",
+      "domain": "psychology",
+      "input_type": "rough_idea",
+      "user_prompt": "我想写'情绪稳定不是没有情绪，而是不用每一种情绪证明自己是错的'。希望文章有温度，但也有判断。",
+      "evaluation_focus": ["warm judgment", "clear reversal", "non-clinical language"],
+      "risk_notes": "No diagnosis or treatment advice."
+    },
+    {
+      "id": "psych-draft-01",
+      "domain": "psychology",
+      "input_type": "plain_draft",
+      "user_prompt": "请重写这段：拖延并不一定是懒。很多时候是任务太模糊，大脑不知道从哪里开始，于是一直回避。解决拖延的办法不是骂自己，而是把任务拆小，降低启动成本，让自己能开始。",
+      "evaluation_focus": ["anti-chicken-soup", "mechanism explanation", "concrete small action"],
+      "risk_notes": "Avoid presenting this as universal clinical truth."
+    },
+    {
+      "id": "psych-draft-02",
+      "domain": "psychology",
+      "input_type": "plain_draft",
+      "user_prompt": "帮我改成更有共鸣的公众号文章：讨好型人格的人总是先照顾别人感受，忽略自己的需求。他们不是没有需求，而是不敢表达需求。长期这样会很累。要学会表达自己的感受和边界。",
+      "evaluation_focus": ["avoid labeling", "specific relationship scenes", "practical scripts"],
+      "risk_notes": "Use '讨好模式' rather than diagnosing a personality."
+    },
+    {
+      "id": "psych-source-01",
+      "domain": "psychology",
+      "input_type": "source_material",
+      "user_prompt": "素材：这是一个复合型观察，不是真实个案。很多来访者在会议里不敢说不同意见，事后反复复盘，觉得自己很没用。后来发现他们不是没有观点，而是害怕一开口就破坏关系。请基于这个素材写长文。",
+      "evaluation_focus": ["composite scenario honesty", "fear of relationship rupture", "bounded suggestions"],
+      "risk_notes": "Must not turn composite observation into a named real client."
+    },
+    {
+      "id": "psych-source-02",
+      "domain": "psychology",
+      "input_type": "source_material",
+      "user_prompt": "素材：我想写精疲力尽。不是因为一个人真的什么都做不好，而是他长期把'应该'放在'我能承受什么'前面。希望文章有三个可尝试动作：删掉一个应该、把任务说清楚、给恢复留时间。",
+      "evaluation_focus": ["burnout-adjacent caution", "three actions", "empathetic tone"],
+      "risk_notes": "Avoid medical burnout diagnosis."
+    },
+    {
+      "id": "coach-topic-01",
+      "domain": "coaching",
+      "input_type": "topic_only",
+      "user_prompt": "写一篇公众号长文：好的教练不是给答案的人，而是帮你看见自己一直在逃避哪个问题的人。",
+      "evaluation_focus": ["coaching stance", "relationship truth", "clear examples"],
+      "risk_notes": "Avoid guru certainty."
+    },
+    {
+      "id": "coach-topic-02",
+      "domain": "coaching",
+      "input_type": "topic_only",
+      "user_prompt": "选题：目标不是越清楚越好，真正重要的是你愿不愿意为这个目标付出代价。帮我写公众号长文。",
+      "evaluation_focus": ["cost framing", "reader implication", "actionable reflection"],
+      "risk_notes": "Do not shame people for changing goals."
+    },
+    {
+      "id": "coach-rough-01",
+      "domain": "coaching",
+      "input_type": "rough_idea",
+      "user_prompt": "观点：一个好问题的作用，不是让你马上有答案，而是让你停止绕圈。想写给经常想很多但不行动的人。",
+      "evaluation_focus": ["question as intervention", "stuck loop", "simple practice"],
+      "risk_notes": "Avoid making coaching sound magical."
+    },
+    {
+      "id": "coach-rough-02",
+      "domain": "coaching",
+      "input_type": "rough_idea",
+      "user_prompt": "我想写：很多人的行动力问题，其实不是懒，而是内在有两个目标在打架。一个想安全，一个想改变。请写得直白、有人味。",
+      "evaluation_focus": ["inner conflict", "plain language", "no fake client story"],
+      "risk_notes": "Keep examples illustrative unless supplied."
+    },
+    {
+      "id": "coach-draft-01",
+      "domain": "coaching",
+      "input_type": "plain_draft",
+      "user_prompt": "帮我重写：复盘很重要。复盘不是总结自己做错了什么，而是看清楚下次可以改变什么。很多人复盘会变成自责，所以越来越不想复盘。好的复盘应该关注事实、选择和下一步。",
+      "evaluation_focus": ["anti-self-blame", "method steps", "title delivery"],
+      "risk_notes": "No fake workshop claims."
+    },
+    {
+      "id": "coach-draft-02",
+      "domain": "coaching",
+      "input_type": "plain_draft",
+      "user_prompt": "请爆款改写：教练对话不是聊天。聊天可能让你舒服一下，但教练对话要帮你看到模式、选择和责任。它不是替你做决定，而是把决定还给你。",
+      "evaluation_focus": ["clear distinction", "relationship boundary", "reader benefit"],
+      "risk_notes": "Avoid demeaning ordinary friendship or therapy."
+    },
+    {
+      "id": "coach-source-01",
+      "domain": "coaching",
+      "input_type": "source_material",
+      "user_prompt": "素材：一个典型教练场景，不是真实个案。来访者说想辞职，但谈着谈着发现，他真正害怕的不是工作本身，而是辞职后证明自己选错了路。请用这个素材写公众号长文，强调不要急着给建议。",
+      "evaluation_focus": ["typical scene honesty", "avoid advice-giving", "deeper fear"],
+      "risk_notes": "Must not present this as a real client case."
+    },
+    {
+      "id": "coach-source-02",
+      "domain": "coaching",
+      "input_type": "source_material",
+      "user_prompt": "素材：团队复盘会上，大家喜欢讨论谁做错了，但很少讨论系统哪里让人容易做错。请写给管理者：好的提问能把责备变成改进。",
+      "evaluation_focus": ["manager coaching", "system vs blame", "question scripts"],
+      "risk_notes": "No invented company facts."
+    }
+  ]
+}

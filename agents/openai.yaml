@@ -1,4 +1,0 @@
-interface:
-  display_name: "中文爆款知识写作"
-  short_description: "把任意选题改成有情绪有结构可转发的高打开率中文内容"
-  default_prompt: "Use $zh-viral-knowledge-writing to turn this topic into high-open-rate Chinese titles, subtitle, outline, and opening."
