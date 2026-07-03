@@ -4,7 +4,73 @@ Use this reference for title, subtitle, opening promise, and title-contract deci
 
 ## Core Rule
 
-The title is a contract with the body. Before drafting, map each title promise to a body section. If the material cannot deliver the promise, change the title.
+Title is not the first step. A title is a validated promise: a candidate claim that becomes usable only after the body plan proves it can deliver emotion, logic, and solution.
+
+Do not use title-first thinking:
+
+- Do not write a loud title and force the body to chase it.
+- Do not use "焦虑", "可怕", "危险", or "时代" as emotional decoration.
+- Do not choose a title just because it sounds clickable.
+
+Use proof-first title thinking:
+
+1. Diagnose the reader's concrete situation.
+2. Build the emotional escalation and logic chain.
+3. Decide what solution or usable language the article can truly give.
+4. Generate title candidates.
+5. Keep only titles that the article can prove.
+
+If the article cannot prove the title, the title is not strong. It is only loud.
+
+## Three Proof Layers
+
+Every recommended title must pass three proof layers.
+
+### 1. Emotion Escalation Ladder
+
+The title's emotion must be able to escalate through the article, not stay as one flat feeling.
+
+Use this ladder:
+
+1. Surface feeling: what the reader says, such as "我很焦虑".
+2. Specific scene: where the feeling appears.
+3. Hidden cost: what the reader is losing.
+4. Opposing force: what bad logic, pressure, habit, or structure creates the cost.
+5. Clear judgment: what the article dares to say.
+6. Emotional exit: what language, boundary, or permission the reader gets.
+
+If a title only says "AI 时代很焦虑" but cannot name scene, cost, force, judgment, and exit, reject it.
+
+### 2. Logic Chain
+
+The title's claim must be supported by a visible reasoning chain.
+
+Minimum chain:
+
+> Situation -> Misread problem -> Real mechanism -> Evidence or example -> Bounded judgment
+
+For example, "你真正焦虑的，不是 AI 太强" requires the article to prove:
+
+- What people think they are afraid of.
+- Why that explanation is incomplete.
+- What the deeper mechanism is.
+- What concrete work or life scene shows it.
+- What judgment can be made without exaggeration.
+
+### 3. Solution Delivery
+
+The title does not always need to promise a checklist, but the article must still give the reader something usable.
+
+Acceptable solution forms:
+
+- A distinction: "这不是 X，是 Y."
+- A question: "你真正要判断的是什么？"
+- A script: a sentence the reader can say.
+- A boundary: what to stop accepting.
+- A small action: what to try next.
+- A framework: 3-5 steps or checks.
+
+If the title promises a method, the body must contain a method. If the title promises emotional clarity, the body must give language and exit, not only describe anxiety.
 
 ## Eight Title Hooks
 
@@ -31,17 +97,22 @@ Use at least two hooks and usually no more than four.
    - Core judgment: "not X, but Y".
    - Practical payoff: what the reader can think, say, or do after reading.
 
-2. Generate at least 12 titles:
+2. Build the proof brief before final title selection:
+   - Emotion Escalation Ladder.
+   - Logic Chain.
+   - Solution Delivery.
+
+3. Generate at least 12 titles:
    - 3 emotional representation titles.
    - 3 counterintuitive titles.
    - 3 concrete-cost titles.
    - 3 method or identity titles.
 
-3. Reject titles that fail hard rules.
+4. Reject titles that fail hard rules or cannot pass all three proof layers.
 
-4. Score remaining titles out of 100.
+5. Score remaining titles out of 100.
 
-5. Pick the strongest title and write the subtitle.
+6. Pick the strongest title and write the subtitle.
 
 ## Title Score
 
@@ -51,7 +122,7 @@ Use at least two hooks and usually no more than four.
 | Conflict and tension | 20 |
 | Novelty of judgment | 15 |
 | Concreteness | 15 |
-| Body deliverability | 20 |
+| Proof and solution deliverability | 20 |
 | Shareable stance | 10 |
 
 ## Hard Reject
@@ -60,6 +131,8 @@ Reject a title when:
 
 - The body cannot prove or illustrate a key promise.
 - The title promises a method but the body gives only emotion.
+- The title names anxiety but not its scene, cost, opposing force, or exit.
+- The title creates emotional heat without a logic chain.
 - The title humiliates vulnerable readers.
 - The title has heat but no defensible claim.
 - The title relies on empty phrases: "认知升级", "底层逻辑", "时代红利", "破局", "赋能".
@@ -74,8 +147,10 @@ Before drafting, create this internal map:
 | Target reader | Opening scene or paragraph 2 |
 | Core conflict | Section 1 |
 | Reversal or judgment | First screen or first 20% |
+| Emotion escalation | Opening, middle escalation, and ending exit |
+| Logic chain | Cause, mechanism, example, and bounded judgment |
 | Evidence, story, or source material | Middle section |
-| Method, answer, or reader payoff | Later section |
+| Solution delivery | Later section: distinction, question, script, boundary, action, or framework |
 | Emotional exit | Ending |
 
 Do not display the full contract unless useful. A short "标题合同摘要" is helpful when the user wants to judge quality.
@@ -113,5 +188,7 @@ When giving title candidates:
 - Mark top 3 with scores.
 - For the recommended title, include:
   - Why it works.
-  - What the body must deliver.
+  - Emotion Escalation Ladder.
+  - Logic Chain.
+  - Solution Delivery.
   - Any overpromise risk.

@@ -38,7 +38,7 @@ Semantic issues still require L2-L4.
 
 ### L2: Title Contract
 
-Check title elements:
+Check title elements and proof layers:
 
 - Reader named or clearly implied.
 - Core conflict appears early.
@@ -46,8 +46,13 @@ Check title elements:
 - Evidence, supplied material, or concrete example supports the claim.
 - Method or answer appears if promised.
 - Ending gives emotional exit.
+- Emotion delivery: the body moves from surface feeling to scene, cost, opposing force, judgment, and emotional exit.
+- Logic delivery: the body shows situation, misread problem, real mechanism, evidence or example, and bounded judgment.
+- Solution delivery: the body gives a usable distinction, question, script, boundary, action, or framework.
 
 If a title promise is missing, either add support or reduce the title's promise.
+
+Do not pass a title just because it is emotionally strong. A strong title must be emotionally charged, logically proved, and practically delivered.
 
 ### L3: Content Score
 
@@ -86,6 +91,7 @@ Ask:
 | Failure | Fix |
 | --- | --- |
 | Generic title | Add reader, cost, conflict, and body-deliverable promise. |
+| Empty anxiety | Add concrete scene, hidden cost, opposing force, and emotional exit. |
 | Flat opening | Start with a scene, dilemma, or contradiction. |
 | Emotion-only | Add mechanism, evidence, or action. |
 | Method-only | Add reader pain before the method. |

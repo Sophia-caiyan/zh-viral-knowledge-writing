@@ -43,11 +43,13 @@ Read only what the request needs:
    - Emotional representation, relationship truth, workplace interest, anti-chicken-soup growth, story/person, or knowledge method.
    - Do not choose story/person unless the user supplies verifiable story material.
 
-4. Design title before drafting.
+4. Verify the title promise.
+   - Treat every title as a hypothesis, not a command.
    - Generate at least 12 candidates across at least 4 hook combinations.
-   - Score and reject titles that cannot be delivered.
+   - Score and reject titles that cannot prove emotion escalation, logic chain, and solution delivery.
    - Pick one recommended title and subtitle.
    - Build an internal title contract mapping title promises to body sections.
+   - Reject titles that only talk about anxiety without scene, cost, opposing force, judgment, and exit.
 
 5. Draft the article.
    - First 20% must contain scene, conflict, and core judgment.
