@@ -102,11 +102,11 @@ Use at least two hooks and usually no more than four.
    - Logic Chain.
    - Solution Delivery.
 
-3. Generate at least 12 titles:
-   - 3 emotional representation titles.
-   - 3 counterintuitive titles.
-   - 3 concrete-cost titles.
-   - 3 method or identity titles.
+3. Generate 20 titles:
+   - 5 emotional representation titles.
+   - 5 counterintuitive titles.
+   - 5 concrete-cost titles.
+   - 5 method or identity titles.
 
 4. Reject titles that fail hard rules or cannot pass all three proof layers.
 
@@ -185,10 +185,12 @@ Adapt, do not fill mechanically:
 When giving title candidates:
 
 - Group by hook type.
-- Mark top 3 with scores.
+- Give 20 candidates by default.
+- Mark top 5 with scores.
 - For the recommended title, include:
   - Why it works.
   - Emotion Escalation Ladder.
   - Logic Chain.
   - Solution Delivery.
   - Any overpromise risk.
+- Include 3-5 attractive but rejected titles with rejection reasons, especially titles that are louder than the article can prove.

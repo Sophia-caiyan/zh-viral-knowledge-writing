@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL_DIR = ROOT / "skill" / "zh-viral-knowledge-writing"
+SKILL_DIR = ROOT / "skill" / "lanlan-writing-skill"
 
 
 class TitleSystemQualityTests(unittest.TestCase):
@@ -44,6 +44,23 @@ class TitleSystemQualityTests(unittest.TestCase):
         text = (SKILL_DIR / "SKILL.md").read_text(encoding="utf-8")
 
         self.assertIn("references/title-data-scale.md", text)
+
+    def test_title_requests_default_to_input_summary_and_20_titles(self):
+        text = (SKILL_DIR / "SKILL.md").read_text(encoding="utf-8")
+
+        self.assertIn("Title Request Defaults", text)
+        self.assertIn("选题核心观点", text)
+        self.assertIn("目标读者", text)
+        self.assertIn("读者情绪", text)
+        self.assertIn("文章能提供的解决方案", text)
+        self.assertIn("20 个标题", text)
+
+    def test_title_data_scale_requires_redacted_attractive_titles(self):
+        text = (SKILL_DIR / "references" / "title-data-scale.md").read_text(encoding="utf-8")
+
+        self.assertIn("Recommended title and subtitle", text)
+        self.assertIn("Why the title can be proved", text)
+        self.assertIn("Attractive but rejected titles", text)
 
 
 if __name__ == "__main__":

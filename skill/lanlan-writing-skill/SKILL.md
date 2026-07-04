@@ -1,9 +1,9 @@
 ---
-name: zh-viral-knowledge-writing
+name: lanlan-writing-skill
 description: Use when creating, diagnosing, outlining, titling, or rewriting high-open-rate Chinese WeChat Official Account long-form articles about AI, psychology, coaching, workplace, personal growth, creator education, or social commentary; especially when the user asks for 爆款, 高共鸣, 标题钩子, 公众号长文, 情绪共鸣, story-driven knowledge writing, or turning abstract ideas into concrete reader-facing Chinese articles.
 ---
 
-# 中文高共鸣公众号长文
+# Lanlan Writing Skill
 
 Use this skill to turn an abstract topic, rough idea, or draft into a WeChat long-form article with a strong title, concrete opening, defensible judgment, useful delivery, and ethical boundaries.
 
@@ -46,7 +46,8 @@ Read only what the request needs:
 
 4. Verify the title promise.
    - Treat every title as a hypothesis, not a command.
-   - Generate at least 12 candidates across at least 4 hook combinations.
+   - For title requests, first summarize the user's input into the four title inputs in "Title Request Defaults".
+   - Generate 20 candidates across at least 4 hook combinations.
    - Score and reject titles that cannot prove emotion escalation, logic chain, and solution delivery.
    - Pick one recommended title and subtitle.
    - Build an internal title contract mapping title promises to body sections.
@@ -65,13 +66,29 @@ Read only what the request needs:
    - L4 check human feel and ethics.
    - Revise up to two rounds. If still weak, name the missing material instead of padding.
 
+## Title Request Defaults
+
+When the user asks for titles, title comparison, or "which title should I use", do this automatically even if the user only gives a rough topic:
+
+1. Summarize the input into:
+   - 选题核心观点
+   - 目标读者
+   - 读者情绪
+   - 文章能提供的解决方案
+2. If any field is missing, infer a practical default and mark it as inferred.
+3. Generate 20 个标题 grouped by hook type.
+4. Score the top 5 in a table using `references/title-data-scale.md`.
+5. Recommend one title and subtitle.
+6. Explain "标题为什么能被兑现": what emotion escalation, logic chain, and solution the article must deliver.
+7. Include 3-5 titles that look more attractive but should be rejected, with the reason.
+
 ## Default Deliverables
 
 Unless the user asks for a narrower output, provide:
 
 1. 读者诊断
 2. 核心判断
-3. 12 个标题，按钩子分组
+3. 20 个标题，按钩子分组
 4. 推荐标题 + 副标题
 5. 标题合同摘要
 6. 公众号长文正文或详细结构

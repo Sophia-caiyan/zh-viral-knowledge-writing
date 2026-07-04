@@ -74,7 +74,11 @@ Hard reject:
 
 When the user asks for titles, output:
 
-1. Data-calibrated diagnosis.
+1. Data-calibrated diagnosis, including the four inferred or supplied inputs:
+   - 选题核心观点
+   - 目标读者
+   - 读者情绪
+   - 文章能提供的解决方案
 2. Emotion escalation.
 3. Logic chain.
 4. Solution delivery.
@@ -91,4 +95,3 @@ When the user asks for titles, output:
 | 1 | ... | 0-100 | Reader + conflict + stance | Emotion, logic, solution | Overpromise / safe |
 
 Use this table in user-facing answers when the user is comparing titles.
-

@@ -1,4 +1,4 @@
-# 中文高共鸣公众号长文 Skill
+# Lanlan Writing Skill
 
 这是一个用于中文公众号长文写作的 Codex skill。它面向 AI、心理学、教练、职场和个人成长类选题，帮助用户从一个抽象观点出发，生成标题、副标题、标题合同、文章结构和正文。
 
@@ -15,13 +15,13 @@
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R skill/zh-viral-knowledge-writing "${CODEX_HOME:-$HOME/.codex}/skills/"
+cp -R skill/lanlan-writing-skill "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
 安装后可以这样调用：
 
 ```text
-Use $zh-viral-knowledge-writing to turn this topic into WeChat long-form titles, subtitle, title contract, and a full Chinese draft.
+Use $lanlan-writing-skill to turn this topic into WeChat long-form titles, subtitle, title contract, and a full Chinese draft.
 ```
 
 ## 适用范围
@@ -44,7 +44,7 @@ Use $zh-viral-knowledge-writing to turn this topic into WeChat long-form titles,
 ## 仓库结构
 
 ```text
-skill/zh-viral-knowledge-writing/
+skill/lanlan-writing-skill/
   SKILL.md
   agents/openai.yaml
   references/
@@ -79,12 +79,21 @@ tests/
 
 不能被正文兑现的标题会被降级或删除。
 
+当用户只要求起标题时，skill 会默认先总结：
+
+- 选题核心观点。
+- 目标读者。
+- 读者情绪。
+- 文章能提供的解决方案。
+
+然后给出 20 个标题、Top 5 评分表、推荐标题和副标题、标题为什么能被正文兑现，以及若干“看起来更吸引人但应该淘汰”的标题。
+
 ## 质量检查
 
 保存草稿后可以运行：
 
 ```bash
-python skill/zh-viral-knowledge-writing/scripts/lint_draft.py --title "文章标题" --input article.md --json
+python skill/lanlan-writing-skill/scripts/lint_draft.py --title "文章标题" --input article.md --json
 ```
 
 脚本只做确定性检查，例如：

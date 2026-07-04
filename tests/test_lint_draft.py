@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "skill" / "zh-viral-knowledge-writing" / "scripts" / "lint_draft.py"
+SCRIPT = ROOT / "skill" / "lanlan-writing-skill" / "scripts" / "lint_draft.py"
 
 
 class LintDraftTests(unittest.TestCase):

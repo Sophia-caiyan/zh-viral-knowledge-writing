@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lanlan Writing Skill"
+  short_description: "为 AI、心理学和教练选题生成高打开率公众号长文"
+  default_prompt: "Use $lanlan-writing-skill to turn this topic into WeChat long-form titles, subtitle, title contract, and a full Chinese draft."

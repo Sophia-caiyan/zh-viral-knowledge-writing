@@ -1,4 +1,0 @@
-interface:
-  display_name: "中文高共鸣公众号长文"
-  short_description: "为 AI、心理学和教练选题生成高打开率公众号长文"
-  default_prompt: "Use $zh-viral-knowledge-writing to turn this topic into WeChat long-form titles, subtitle, title contract, and a full Chinese draft."

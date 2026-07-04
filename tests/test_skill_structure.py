@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL_DIR = ROOT / "skill" / "zh-viral-knowledge-writing"
+SKILL_DIR = ROOT / "skill" / "lanlan-writing-skill"
 SKILL_MD = SKILL_DIR / "SKILL.md"
 
 
@@ -23,7 +23,7 @@ class SkillStructureTests(unittest.TestCase):
         fields, _ = self.frontmatter()
 
         self.assertEqual(set(fields), {"name", "description"})
-        self.assertEqual(fields["name"], "zh-viral-knowledge-writing")
+        self.assertEqual(fields["name"], "lanlan-writing-skill")
         self.assertLessEqual(len(fields["name"] + fields["description"]), 1024)
         self.assertIn("WeChat Official Account", fields["description"])
 
@@ -44,8 +44,8 @@ class SkillStructureTests(unittest.TestCase):
     def test_openai_yaml_mentions_skill_name(self):
         metadata = (SKILL_DIR / "agents" / "openai.yaml").read_text(encoding="utf-8")
 
-        self.assertIn('display_name: "中文高共鸣公众号长文"', metadata)
-        self.assertIn("$zh-viral-knowledge-writing", metadata)
+        self.assertIn('display_name: "Lanlan Writing Skill"', metadata)
+        self.assertIn("$lanlan-writing-skill", metadata)
 
     def test_root_v1_skill_files_removed(self):
         self.assertFalse((ROOT / "SKILL.md").exists())

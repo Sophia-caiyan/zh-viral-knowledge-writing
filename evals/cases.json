@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03-v2",
-  "purpose": "Public regression cases for the zh-viral-knowledge-writing skill. These prompts test title generation, WeChat long-form structure, source honesty, and usefulness for AI, psychology, and coaching topics.",
+  "purpose": "Public regression cases for the lanlan-writing-skill skill. These prompts test title generation, WeChat long-form structure, source honesty, and usefulness for AI, psychology, and coaching topics.",
   "run_contract": {
     "platform": "WeChat Official Account long-form",
     "expected_output": "reader diagnosis, title candidates, recommended title and subtitle, title contract, full draft or outline as requested, quality self-check",
