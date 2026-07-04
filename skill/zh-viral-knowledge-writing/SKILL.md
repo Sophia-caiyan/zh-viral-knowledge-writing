@@ -24,6 +24,7 @@ Do not use this as the primary skill for Xiaohongshu notes, short-video scripts,
 Read only what the request needs:
 
 - For any complete title, outline, rewrite, or full article request, read `references/title-system.md` and `references/quality-system.md`.
+- For title-only requests, title comparison, or title scoring, also read `references/title-data-scale.md`.
 - After diagnosing the article type, read `references/article-archetypes.md`.
 - For AI, psychology, coaching, workplace, or growth topics, read the matching section in `references/domain-adaptation.md`.
 - For full drafting, rewriting, or critique, read `references/style-examples.md`.

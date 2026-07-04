@@ -32,6 +32,19 @@ class TitleSystemQualityTests(unittest.TestCase):
 
         self.assertIn("Verify the title promise", text)
 
+    def test_title_data_scale_reference_exists(self):
+        text = (SKILL_DIR / "references" / "title-data-scale.md").read_text(encoding="utf-8")
+
+        self.assertIn("Title Data Scale", text)
+        self.assertIn("1026 valid titles", text)
+        self.assertIn("12-18 Chinese characters", text)
+        self.assertIn("Forwardable stance", text)
+
+    def test_skill_loads_title_data_scale_for_title_requests(self):
+        text = (SKILL_DIR / "SKILL.md").read_text(encoding="utf-8")
+
+        self.assertIn("references/title-data-scale.md", text)
+
 
 if __name__ == "__main__":
     unittest.main()
