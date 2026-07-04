@@ -54,6 +54,7 @@ Read only what the request needs:
    - Reject titles that only talk about anxiety without scene, cost, opposing force, judgment, and exit.
 
 5. Draft the article.
+   - Build an emotion progression map before writing or rewriting; avoid repeating the same judgment in multiple sections.
    - First 20% must contain scene, conflict, and core judgment.
    - Put a scene, example, or consequence after every abstract point.
    - Alternate emotional recognition and useful explanation.
@@ -62,7 +63,7 @@ Read only what the request needs:
 6. Run quality checks.
    - L1 deterministic lint: use `scripts/lint_draft.py` when checking a saved draft.
    - L2 title contract: every title promise must be delivered.
-   - L3 score content quality: reader implication, opening, conflict, judgment, evidence, usefulness, rhythm, ending.
+   - L3 score content quality: reader implication, opening, conflict, emotion progression, judgment, evidence, usefulness, rhythm, ending.
    - L4 check human feel and ethics.
    - Revise up to two rounds. If still weak, name the missing material instead of padding.
 

@@ -62,6 +62,20 @@ class TitleSystemQualityTests(unittest.TestCase):
         self.assertIn("Why the title can be proved", text)
         self.assertIn("Attractive but rejected titles", text)
 
+    def test_quality_system_requires_emotion_progression_not_repetition(self):
+        text = (SKILL_DIR / "references" / "quality-system.md").read_text(encoding="utf-8")
+
+        self.assertIn("Emotion Progression Map", text)
+        self.assertIn("刺痛 -> 失重 -> 委屈 -> 自我怀疑 -> 看清机制 -> 重新站稳", text)
+        self.assertIn("Do not keep re-explaining the title", text)
+        self.assertIn("low information density", text)
+
+    def test_skill_workflow_requires_emotion_progression_before_drafting(self):
+        text = (SKILL_DIR / "SKILL.md").read_text(encoding="utf-8")
+
+        self.assertIn("Build an emotion progression map", text)
+        self.assertIn("avoid repeating the same judgment", text)
+
 
 if __name__ == "__main__":
     unittest.main()

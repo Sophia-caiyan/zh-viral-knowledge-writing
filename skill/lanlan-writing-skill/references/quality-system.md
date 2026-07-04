@@ -36,6 +36,34 @@ The script checks only deterministic issues:
 
 Semantic issues still require L2-L4.
 
+### L1.5: Emotion Progression Map
+
+Before drafting or rewriting, map the reader's emotional movement. Do not keep re-explaining the title with different words.
+
+For core-judgment articles, a useful default progression is:
+
+> 刺痛 -> 失重 -> 委屈 -> 自我怀疑 -> 看清机制 -> 重新站稳
+
+Use the map this way:
+
+- 刺痛: the first concrete moment where the reader feels hit.
+- 失重: the old source of safety no longer feels stable.
+- 委屈: the reader was not lazy; effort itself feels repriced.
+- 自我怀疑: the work question becomes a self-worth question.
+- 看清机制: explain the real mechanism only after the feeling has moved.
+- 重新站稳: give the reader a new position, language, or next action.
+
+If two adjacent sections make the same judgment, merge them. A section must change one of three things: emotion, mechanism, or action. If it changes none, cut it.
+
+Red flags:
+
+- low information density: 3500 characters carrying only 2200 characters of movement.
+- Repeating the same claim as summary, explanation, and conclusion.
+- Sections that only restate the title instead of moving the reader's feeling.
+- Method points arriving before the reader has felt the pain clearly enough to need them.
+
+For single-core-judgment articles, prefer 2500-2800 Chinese characters unless the user supplies substantial story, evidence, or factual material.
+
 ### L2: Title Contract
 
 Check title elements and proof layers:
@@ -61,6 +89,7 @@ Rate 1-5:
 - Reader implication.
 - Opening traction.
 - Conflict clarity.
+- Emotion progression.
 - Judgment strength.
 - Reasoning and evidence.
 - Practical value.
@@ -93,6 +122,8 @@ Ask:
 | Generic title | Add reader, cost, conflict, and body-deliverable promise. |
 | Empty anxiety | Add concrete scene, hidden cost, opposing force, and emotional exit. |
 | Flat opening | Start with a scene, dilemma, or contradiction. |
+| Repeated judgment | Compress sections that explain the same claim; move through emotion, mechanism, then action. |
+| Low information density | Cut filler sections and make every section change emotion, mechanism, or action. |
 | Emotion-only | Add mechanism, evidence, or action. |
 | Method-only | Add reader pain before the method. |
 | Concept stack | Replace every abstract paragraph with a daily-life moment. |
